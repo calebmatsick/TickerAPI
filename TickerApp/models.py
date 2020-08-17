@@ -1,3 +1,8 @@
 from django.db import models
 
-# Create your models here.
+class stock(models.Model):
+    ticker=models.CharField(max_length=4)
+    exchange=models.CharField(max_length=4)
+
+    def __str__(self):
+        return
